@@ -1,6 +1,4 @@
-Art.delete_all
-Review.delete_all
-User.delete_all
+
 
 puts "🌱 Seeding spices..."
 
@@ -13,7 +11,6 @@ binyavanga = Art.create(
     art_description:"This art was requested by a client of mine. Her name is Queen Munguti. I created it at a time when I was almost completing my university studies at Kenyatta University.",
     art_price: 50
 
-  
 )
 
 hella_freckles = Art.create(
@@ -52,68 +49,78 @@ chiworld1234 = Art.create(
 
                         #Creating users instances
 
-                        user_one = User.create(user_name:"Art Lover")
+user_one = User.create(user_name:"Art Lover")
 
-                        user_two = User.create(user_name:"The Artistry")
+user_two = User.create(user_name:"The Artistry")
 
-                        user_three = User.create(user_name:"Arter")
+user_three = User.create(user_name:"Arter")
 
-                        user_four = User.create(user_name:"The Alchemart")
+user_four = User.create(user_name:"The Alchemart")
 
-                        user_five = User.create(user_name:"Magnificent")
+user_five = User.create(user_name:"Magnificent")
 
-                        user_six = User.create(user_name:"Sixer")
+user_six = User.create(user_name:"Sixer")
 
-                        user_seven = User.create(user_name:"Seventher")
+user_seven = User.create(user_name:"Seventher")
 
                         #Creating Review Instances
 
-                        review_one = Review.create(
-                            comment: "I really love this art. His mastery is top notch. Woww!",
-                            rating: 8,
-                            art_id:binyavanga.id,
-                            user_id:user_one.id
+review_one = Review.create(
+comment: "I really love this art. His mastery is top notch. Woww!",
+rating: 8,
+art_id:binyavanga.id,
+user_id:user_one.id
 
-                        )
+)
 
-                        review_two = Review.create(
-                            comment: "Nice one. I love it!",
-                            rating: 9,
-                            art_id:hella_freckles.id,
-                            user_id:user_two.id
+review_two = Review.create(
+comment: "Nice one. I love it!",
+rating: 9,
+art_id:hella_freckles.id,
+user_id:user_two.id
 
-                        )
+)
 
-                        review_three = Review.create(
-                            comment: "Woww!Just amazed with the raw talent.",
-                            rating: 10,
-                            art_id:nyashinski.id,
-                            user_id:user_three.id
+review_three = Review.create(
+comment: "Woww!Just amazed with the raw talent.",
+rating: 10,
+art_id:nyashinski.id,
+user_id:user_three.id
 
-                        )
+)
 
-                        review_four = Review.create(
-                            comment: "Got to show my cousin this asap!!",
-                            rating: 10,
-                            art_id:martoh.id,
-                            user_id:user_four.id
+review_four = Review.create(
+comment: "Got to show my cousin this asap!!",
+rating: 10,
+art_id:martoh.id,
+user_id:user_four.id
 
-                        )
+)
 
-                        review_five = Review.create(
-                            comment: "Aahh! Aaaahh! This is just awesome.",
-                            rating: 10,
-                            art_id:chamutoonz.id,
-                            user_id:user_five.id
+review_five = Review.create(
+comment: "Aahh! Aaaahh! This is just awesome.",
+rating: 10,
+art_id:chamutoonz.id,
+user_id:user_five.id
 
-                        )
+)
 
-                        review_six = Review.create(
+review_six = Review.create(
                             comment: "Fabulous!!Amazing!!Fantastic!!Just amazed.",
                             rating: 10,
                             comment: "Raw talent.That's awesome!",
                             rating: 10,
                             art_id:dprince.id,
+                            user_id:user_six.id
+
+                        )
+
+                        review_seven = Review.create(
+                            comment: "Really great and awesome.",
+                            rating: 10,
+                            comment: "Raw talent.That's awesome!",
+                            rating: 10,
+                            art_id:chiworld1234.id,
                             user_id:user_seven.id
 
                         )
