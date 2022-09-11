@@ -34,5 +34,15 @@ review.to_json
 
 end
 
+patch "/review/patch/:id" do
+
+  reviews = Review.all.find(params[:id])
+  reviews.update(
+    comment: params[:comment],
+    rating: params[:rating]
+  )
+
+  reviews.to_json
+end
 
 end
