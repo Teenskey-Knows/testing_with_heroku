@@ -47,6 +47,24 @@ chiworld1234 = Art.create(
                         art_description:"One of the greatest artist who has mentored a lot of artists on instagram.",
                         art_price: 70)
 
+hella_freckles = Art.create(
+    art_image:"https://pbs.twimg.com/media/FB-IsSNXIAQejxd?format=jpg&name=small",
+    art_name: "Hella Freckles Potrait Art",
+    art_description:"She goes by the name Hella Freckles. I had to create this art. Her beauty amazed me. The way she looks is addictive. If I'd choose an imperfect perfection on a woman is such kind of freckles on a beautiful face. It's beyond under estimation when we say that God is like an Artist. ",
+    art_price: 100)
+
+chamutoonz = Art.create(
+    art_image:"https://pbs.twimg.com/media/FC7YulpWQAINCXH?format=jpg&name=large",
+    art_name: "Chamutoonz Art",
+    art_description:"This is one of my friends art by the name Chamutoonz. He is also one of the greatest artist when it comes to digital art.",
+    art_price: 70)
+
+
+martoh = Art.create(
+    art_image:"https://pbs.twimg.com/media/Fb_HW3QXkAI-JVv?format=jpg&name=360x360",
+    art_name: "Maroh Incognitoh Art",
+    art_description:"This is a potrait of me. Nothing much.",
+    art_price: 70)
                         #Creating users instances
 
 user_one = User.create(user_name:"Art Lover")
